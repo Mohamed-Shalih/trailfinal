@@ -1,10 +1,55 @@
 #sectionb1{
-    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/life-above-the-clouds-alexander-davidovich.jpg);
+    background-image: url(Images/wallpaperflare.com_wallpaper.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: bottom;
     min-height: 100vh;
     padding-bottom: 30px;
+}
+.hd-NV{
+    max-width: 90%;
+    max-height: 10vh;
+    margin: auto;
+    top: 3vh;
+    box-shadow: 0px 0px 2px 0px red;
+    border-radius: 5px;
+}
+.logo-S{
+    background-color: none;
+    border: none;
+    padding: 0%;
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+}
+.logo-S:hover{
+    color: #42EADDFF;
+}
+.logo-S:hover .logo-H{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.logo-H{
+    display: inline-flex;
+    visibility: hidden;
+    position: absolute;
+    min-width: 160px;
+    background: none;
+    color: white;
+    padding-bottom : 1em;
+    z-index: 1;
+    transition: 2s;
+    opacity: 0;
+    transform: scale(.75)   
+}
+.sea-H{
+    display: inline;
+    width: 30vh;
+    transition: 3s;
+}
+.ndp1{
+    z-index: 1;
 }
 #backtotop{
     padding: 1vh;
@@ -13,6 +58,7 @@
     position:fixed;
     bottom: 5vh;
     right: 5vh;
+    border-radius: 3px;
 }
 #backtotop:hover{
     background-color: red;
@@ -33,9 +79,12 @@
     height: 2em;
     margin-top: 10%;
     cursor: pointer;
+    border-radius: 2px;
+    transition: 250ms;
 }
 .button1:hover{
     background-color: rgb(190, 2, 2);
+    cursor: pointer;
 }
 .section{
     background-color: white;
@@ -53,11 +102,12 @@
     min-height: 100vh;
 }
 .s2card{
+    max-width: 18rem;
     border: none;
     text-align: center;
-    height: 15em;
-    width: 18rem;
+    height: 45%;
     margin: auto;
+    transition: 500ms;
 }
 .s2card:hover{
     -webkit-transform: translate(0, -8px);
@@ -66,12 +116,19 @@
 	-o-transform: translate(0, -8px);
 	transform: translate(0, -8px);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .button2{
     color: white;
     background-color: red;
-    height: 3em;
+    height: 2em;
     border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 250ms;
+}
+.button2:hover{
+    background-color: rgb(190, 2, 2);
     cursor: pointer;
 }
 .section3para{
@@ -103,34 +160,106 @@
     width: 100%;
 }
 .section4I{
-    max-height: 80vh;
-    padding-top: 10em;
-    max-width: 50vh;
+    padding-top: 5em;
+    max-width: 100%;
 }
 .headTwo{
     font-family: 'Font Awesome 5 Brands';
     text-align: center;
 }
-.image1{
-    width: 95%;
+#s4img1{
+    width: 90%;
     height: 100%;
-    padding: 1em;
+    transition: 2s;
+    margin: 1em;
+    box-shadow: 3px 3px 3px rgb(193, 193, 255);
 }
+
 .image2{
-    height: 50%;
-    width: 95%;
-    padding: 1em;
+    height: 47.5%;
+    width: 90%;
+    margin: 1em;
+    transition: 2s;
+    box-shadow: 3px 3px 3px rgb(193, 193, 255);
+}
+.thumb_image:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 .image3{
-    height: 50%;
-    width: 95%;
-    padding: 1em;
+    height: 47.5%;
+    width: 90%;
+    margin: 1em;
+    transition: 2s;
+    box-shadow: 3px 3px 3px rgb(193, 193, 255);
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption{
+    margin: auto;
+    display: block;
+    width: 80vh;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content,#caption{
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+@keyframes zoom{
+    from{transform: scale(0.1);}
+    to{transform: scale(1);}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 .headline i, .headline h1, .headline small {
     display: inline;
 }
 .s5c{
     height: 60%;
+    width: 100%;
+}
+.s5cI{
+    max-width: 16em;
+    margin-top: 3em;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: auto;
+    margin-bottom: 1em;
+    box-shadow: 0px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
 }
 .buttonS5{
     margin-top: 1em;
@@ -139,6 +268,8 @@
     color: white;
     height: 3em;
     width: 50%;
+    border-radius: 2px;
+    transition: 250ms;
 }
 .buttonS5:hover{
     background-color: rgb(196, 4, 4);
@@ -150,13 +281,14 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: 5em;
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .s5fc{
     text-align: center;
+    transition: 350ms;
 }
 .s5fc:hover{
     -webkit-transform: translate(0, -8px);
@@ -174,15 +306,23 @@
     align-items: center;
 
 }
+.s6cImg{
+    width: 90%;
+    height: 10rem;
+    box-shadow: 0px 2px 2px 2px;
+    margin: auto;
+}
 .itw{
     color: rgb(48, 47, 47);
+    transition: 250ms;
 }
 .itw:hover{
     color: #00acee;
     cursor: pointer;
 }
 .iln{
-    color: rgb(48, 47, 47);;
+    color: rgb(48, 47, 47);
+    transition: 250ms;
 }
 .iln:hover{
     color: #0072b1;
@@ -190,6 +330,7 @@
 }
 .igp{
     color: rgb(48, 47, 47);
+    transition: 250ms;
 }
 .igp:hover{
     color: #db4a39;
@@ -197,6 +338,7 @@
 }
 .ivk{
     color: rgb(48, 47, 47);
+    transition: 250ms;
 }
 .ivk:hover{
     color: #4c75a3;
@@ -254,6 +396,7 @@
 #ifbs{
     color: white;
     background-color: #3a3030;
+    transition: 250ms;
 }
 #ifbs:hover{
     background-color: #4267B2;
@@ -261,6 +404,7 @@
 #itws{
     color: white;
     background-color: #3a3030;
+    transition: 250ms;
 }
 #itws:hover{
     background-color: #00acee;
@@ -268,6 +412,7 @@
 #idrs{
     color: white;
     background-color: #3a3030;
+    transition: 250ms;
 }
 #idrs:hover{
     background-color: #ea4c89;
@@ -275,12 +420,14 @@
 #ilns{
     color: white;
     background-color: #3a3030;
+    transition: 250ms;
 }
 #ilns:hover{
     background-color: #0072b1;
 }
 #igps{
     background-color: #3a3030;
+    transition: 250ms;
     color: white;
 }
 #igps:hover{
@@ -289,6 +436,7 @@
 #ivks{
     color: white;
     background-color: #3a3030;
+    transition: 250ms;
 }
 #ivks:hover{
     background-color: #4c75a3;
